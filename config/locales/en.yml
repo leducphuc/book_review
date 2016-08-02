@@ -2,7 +2,21 @@ en:
   application:
     home: "Home"
     welcome: "Welcome"
-    login: "LOGIN"
+    login: "Login"
+    sign_in: "Sign in"
+    login_title: "Login"
     logo: "BRB_29"
+    sign_up: "Sign up"
+    logout: "SIGN OUT"
+    edit: "Edit"
+    edit_profile: "Edit profile"
+    back: "Back"
+    confirm: "Are you sure?"
   footer:
     content: "BRB_29 TEAM"
+  register:
+    password_nochange: " (leave blank if you don't want to change it)"
+    password_confirm: " (we need your current password to confirm your changes)"
+    cancle_account: "Cancle your account"
+    unhappy: "Unhappy"
+    characters_minimum: " characters minimum"
