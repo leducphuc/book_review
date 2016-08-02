@@ -4,7 +4,13 @@
       <%= link_to t("application.logo"), root_path, class: "navbar-brand" %>
     </div>
     <ul class="nav navbar-nav navbar-right">   
-      <li><%= link_to t("application.login"), "#" %></li>
+    <% if current_user %>
+      <li><%= link_to t("application.edit_profile"), edit_user_registration_path %></li>
+      <li><%= link_to t("application.logout"), destroy_user_session_path,
+        method: :delete %></li>
+    <% else %>
+      <li><%= link_to t("application.login"), new_user_session_path %></li>
+    <% end %>
     </ul>
   </div>
 </nav>
