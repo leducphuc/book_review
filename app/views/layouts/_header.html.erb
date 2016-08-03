@@ -4,13 +4,22 @@
       <%= link_to t("application.logo"), root_path, class: "navbar-brand" %>
     </div>
     <ul class="nav navbar-nav navbar-right">   
-    <% if current_user %>
-      <li><%= link_to t("application.edit_profile"), edit_user_registration_path %></li>
-      <li><%= link_to t("application.logout"), destroy_user_session_path,
-        method: :delete %></li>
-    <% else %>
-      <li><%= link_to t("application.login"), new_user_session_path %></li>
-    <% end %>
+      <% if user_signed_in? %>
+        <% if current_user.is_admin? %>
+          <li>
+            <%= link_to t("book.new"), new_admin_book_path %>
+          </li> 
+          <li>
+            <%= link_to t("book.books"), admin_books_path %>
+          </li>
+        <% end %>
+        <li><%= link_to t("application.edit_profile"), 
+          edit_user_registration_path %></li>
+        <li><%= link_to t("application.logout"), destroy_user_session_path,
+          method: :delete %></li>
+      <% else %>
+        <li><%= link_to t("application.login"), new_user_session_path %></li>
+      <% end %>
     </ul>
   </div>
 </nav>

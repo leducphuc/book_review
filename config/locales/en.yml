@@ -12,6 +12,8 @@ en:
     edit_profile: "Edit profile"
     back: "Back"
     confirm: "Are you sure?"
+    nil: "File not found"
+    default-image: "http://pngimg.com/upload/book_PNG2111.png"
   footer:
     content: "BRB_29 TEAM"
   register:
@@ -20,3 +22,19 @@ en:
     cancle_account: "Cancle your account"
     unhappy: "Unhappy"
     characters_minimum: " characters minimum"
+  book:
+    create_notice: "Book has been created."
+    create_alert: "Book has not been created."
+    update_notice: "Book has been updated."
+    update_alert: "Book has not been updated."
+    new: "New book"
+    create: "New book"
+    edit: "Edit"
+    delete: "Delete"
+    destroy: "Book has been deleted."
+    destroy_alert: "Book has not been deleted"
+    form_error: "error"
+    contain: "The form contains"
+    book_category: "Category"
+    book_author: "Author"
+    books: "Books"

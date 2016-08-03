@@ -1,0 +1,33 @@
+<%= provide :title, @book.title %>
+<div class="row">
+  <div class="col-md-4">
+    <div class="book_image">
+      <p>
+        <%= image_tag t("application.default-image"), class: "mc-img" %>
+      </p>
+    </div>
+    <div class="book_info">
+      <div class="produdct_name">
+        <p><%= @book.title %></p>
+      </div>
+      <p>
+        <strong><%= t "book.book_author" %>: </strong>
+        <%= @book.author %>
+      </p>
+      <p>
+        <strong><%= t "book.book_category" %>: </strong>
+        <%= @book.category.name %>
+      </p>
+      <p>
+        <%= link_to t("book.edit"), edit_admin_book_path(@book), 
+          class: "btn btn-primary" %>
+        <%= link_to t("book.delete"), admin_book_path(@book), 
+          method: :delete, data: {confirm: t("application.confirm")}, 
+          class: "btn btn-primary" %>
+      </p>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <h1><%= t "book.review" %></h1>
+  </div>
+</div>

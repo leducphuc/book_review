@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for [:admin, @book] do |f| %>
+      <%= render "shared/error_messages", object: @book %>
+      <div class="form-group">
+        <%= f.label :title %>
+        <%= f.text_field :title, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :author %>
+        <%= f.text_field :author, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :category_id %>
+        <%= f.select :category_id, @category_selects, {}, 
+          class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :number_of_pages %>
+        <%= f.text_field :number_of_pages, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :publish_date %>
+        <%= f.date_field :publish_date, class: "form-control" %> 
+      </div>
+      <div class="action center">
+        <%= f.submit t("book.#{params[:action]}"), class: "btn btn-md btn-success" %>
+      </div>
+    <% end %>
+  </div>
+</div>
