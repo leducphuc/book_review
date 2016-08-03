@@ -1,16 +1,16 @@
 <div class="item col-xs-4 col-lg-4">
   <div class="thumbnail">
-    <%= image_tag t("application.default-image"), 
-      class: "group list-group-image mc-img" %>
+    <%= link_to (image_tag t("application.default-image"), 
+      class: "group list-group-image mc-img"), book %>
     <div class="caption">
       <h4 class="group inner list-group-item-heading">
         <%= link_to book.title, [:admin, book] %>
       </h4>
       <p class="group inner list-group-item-text">
-        <%= book.author %>
+        <%= t "book.book_author" %>: <%= book.author %>
       </p>
       <p class="group inner list-group-item-text">
-        <%= book.category.name %>
+        <%= t "book.book_category" %>: <%= book.category.name %>
       </p>
       <p>
         <%= link_to t("book.edit"), edit_admin_book_path(book), 

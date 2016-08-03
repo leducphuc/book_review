@@ -37,4 +37,14 @@ en:
     contain: "The form contains"
     book_category: "Category"
     book_author: "Author"
+    book_pages: "Pages"
+    publish_date: "Publish date"
     books: "Books"
+
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: "Last &raquo;"
+      previous: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
+      truncate: "&hellip;"
