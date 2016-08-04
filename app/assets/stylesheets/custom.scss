@@ -4,6 +4,10 @@
 $gray-medium-light: #eaeaea;
 
 /* universal */
+body {
+  background: #F1F3FA;
+}
+
 section {
   overflow: auto;
 }
@@ -54,8 +58,7 @@ p {
   border-radius: 0;
   margin-bottom: 0;
   font-size: 12px;
-  letter-spacing: 5px;
-  opacity: 0.6;
+  letter-spacing: 1px;
 }
 
 .navbar-nav a:hover {
@@ -145,4 +148,80 @@ footer ul li {
 /* paginate */
 .clear {
   clear: both;
+}
+.round-image-50 {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  text-align: center;
+  img {width: 100%}
+}
+
+/* Profile container */
+.profile {
+  margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: #fff;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-email {
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+    
+/* Profile Content */
+.profile-content {
+  padding: 20px;
+  background: #fff;
+  min-height: 460px;
 }

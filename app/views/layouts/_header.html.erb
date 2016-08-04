@@ -21,6 +21,13 @@
           edit_user_registration_path %></li>
         <li><%= link_to t("application.logout"), destroy_user_session_path,
           method: :delete %></li>
+        <li>
+          <%= link_to current_user do %>
+            <div class="round-image-50">
+              <%= image_tag current_user.avatar.url :thumb %>          
+            </div>
+          <% end %>
+        </li>
       <% else %>
         <li><%= link_to t("application.login"), new_user_session_path %></li>
       <% end %>
