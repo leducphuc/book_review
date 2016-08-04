@@ -7,13 +7,14 @@ en:
     login_title: "Login"
     logo: "BRB_29"
     sign_up: "Sign up"
-    logout: "SIGN OUT"
+    logout: "Sign out"
     edit: "Edit"
     edit_profile: "Edit profile"
     back: "Back"
     confirm: "Are you sure?"
     nil: "File not found"
     default-image: "http://pngimg.com/upload/book_PNG2111.png"
+    follow: "Follow"
   footer:
     content: "BRB_29 TEAM"
   register:
@@ -40,7 +41,6 @@ en:
     book_pages: "Pages"
     publish_date: "Publish date"
     books: "Books"
-
   views:
     pagination:
       first: "&laquo; First"
@@ -48,3 +48,7 @@ en:
       previous: "&lsaquo; Prev"
       next: "Next &rsaquo;"
       truncate: "&hellip;"
+  user:
+    nil: "Can not find that user"
+  button: 
+    update: "Update"  
