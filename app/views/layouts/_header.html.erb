@@ -12,6 +12,10 @@
           <li>
             <%= link_to t("book.books"), admin_books_path %>
           </li>
+        <% else %>
+          <li>
+            <%= link_to t("book.books"), books_path %>
+          </li>
         <% end %>
         <li><%= link_to t("application.edit_profile"), 
           edit_user_registration_path %></li>

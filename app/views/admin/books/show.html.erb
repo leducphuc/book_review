@@ -11,12 +11,20 @@
         <p><%= @book.title %></p>
       </div>
       <p>
-        <strong><%= t "book.book_author" %>: </strong>
+        <%= t "book.book_author" %>:
         <%= @book.author %>
       </p>
       <p>
-        <strong><%= t "book.book_category" %>: </strong>
+        <%= t "book.book_category" %>:
         <%= @book.category.name %>
+      </p>
+      <p>
+        <%= t "book.pages" %>:
+        <%= @book.number_of_pages %>
+      </p>
+      <p>
+        <%= t "book.publish_date" %>:
+        <%= @book.publish_date %>
       </p>
       <p>
         <%= link_to t("book.edit"), edit_admin_book_path(@book), 

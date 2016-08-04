@@ -1,0 +1,24 @@
+<%= provide :title, @book.title %>
+<div class="row">
+  <div class="col-md-4">
+    <div class="book_image">
+      <p>
+        <%= image_tag t("application.default-image"), class: "mc-img" %>
+      </p>
+    </div>
+    <div class="book_info">
+      <p><h4><%= @book.title %></h4></p>
+      <p>
+        <%= t "book.book_author" %>: 
+        <%= @book.author %>
+      </p>
+      <p>
+        <%= t "book.book_category" %>:
+        <%= @book.category.name %>
+      </p>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <h1><%= t "book.review" %></h1>
+  </div>
+</div>
