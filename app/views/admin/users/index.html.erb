@@ -1,0 +1,8 @@
+<% provide :title, t("user.users") %>
+<div class="col-md-9 col-md-offset-3">
+  <h1><%= t "user.users" %></h1>
+  <%= render @users %>
+  <div class="clear">
+    <%= paginate @users %>
+  </div>
+</div>
