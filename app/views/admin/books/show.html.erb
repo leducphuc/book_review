@@ -1,13 +1,11 @@
 <%= provide :title, @book.title %>
 <div class="row">
   <div class="col-md-4">
-    <div class="book_image">
-      <p>
-        <%= image_tag t("application.default-image"), class: "mc-img" %>
-      </p>
+    <div class="book-image center">
+      <%= image_tag t("application.default-image"), class: "mc-img" %>
     </div>
     <div class="book_info">
-      <div class="produdct_name">
+      <div class="produdct_name center">
         <p><%= @book.title %></p>
       </div>
       <p>
@@ -26,16 +24,16 @@
         <%= t "book.publish_date" %>:
         <%= @book.publish_date %>
       </p>
-      <p>
+      <div class="center">
         <%= link_to t("book.edit"), edit_admin_book_path(@book), 
           class: "btn btn-primary" %>
         <%= link_to t("book.delete"), admin_book_path(@book), 
           method: :delete, data: {confirm: t("application.confirm")}, 
-          class: "btn btn-primary" %>
-      </p>
+          class: "btn btn-danger" %>
+      </div>
     </div>
   </div>
-  <div class="col-md-8">
-    <h1><%= t "book.review" %></h1>
+  <div class="col-md-8 review-zone">
+    <h2><%= t "book.review" %></h2>
   </div>
 </div>
