@@ -1,7 +1,7 @@
 en:
   application:
     home: "Home"
-    welcome: "Welcome"
+    welcome: "Framgia book review system"
     login: "Login"
     sign_in: "Sign in"
     login_title: "Login"
@@ -15,6 +15,7 @@ en:
     nil: "File not found"
     default-image: "http://pngimg.com/upload/book_PNG2111.png"
     follow: "Follow"
+    destroy: "Delete"
   footer:
     content: "BRB_29 TEAM"
   register:
@@ -50,5 +51,10 @@ en:
       truncate: "&hellip;"
   user:
     nil: "Can not find that user"
+    destroy: "User deleted"
+    destroy_fail: "Can not delete that user"
+    users: "Users"
   button: 
-    update: "Update"  
+    update: "Update"
+  quote:
+    first: "A book is a dream that you hold in your hand."

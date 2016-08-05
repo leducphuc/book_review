@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   root "static_pages#home"
   resources :books, only: [:index, :show]
   namespace :admin do
-    resources :books 
+    resources :books
+    resources :users, only: [:show, :index, :destroy]
   end
   resources :users, only: :show
 end

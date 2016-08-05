@@ -1,11 +1,22 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.testdiv {
+  width:250px; /* or whatever width you want. */
+  max-width:250px; /* or whatever width you want. */
+  display: inline-block;
+  height: 250px;
+  max-height: 250px;
+}
 $gray-medium-light: #eaeaea;
 
 /* universal */
 body {
   background: #F1F3FA;
+}
+
+.home {
+  background-image: url("/images/background/book-backgroup.jpg");
 }
 
 section {
@@ -48,6 +59,7 @@ p {
 
 .jumbotron {
   background-color: #e6f9ee;
+  color: #ffffff;
 }
 
 /* header */
@@ -176,10 +188,8 @@ footer ul li {
 .profile-userpic img {
   float: none;
   margin: 0 auto;
-  width: 50%;
-  height: 50%;
-  -webkit-border-radius: 50% !important;
-  -moz-border-radius: 50% !important;
+  width: 100px; 
+  height: 100px;
   border-radius: 50% !important;
 }
 

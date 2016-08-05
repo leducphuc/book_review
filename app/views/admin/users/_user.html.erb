@@ -1,0 +1,18 @@
+<div class="item col-xs-4 col-lg-4 testdiv">
+  <div class="profile-userpic center">
+    <%= image_tag user.avatar.url :thumb %>
+  </div>
+  <div class="profile-usertitle">
+    <div class="profile-usertitle-name">
+      <%= link_to user.name, admin_user_path(user) %>
+    </div>
+    <div class="profile-usertitle-email">
+      <%= user.email %>
+    </div>
+    <div class="profile-userbuttons">
+      <%= link_to t("application.destroy"), admin_user_path(user), 
+        method: :delete, data: {confirm: t("application.confirm")},
+        class: "btn btn-danger btn-sm" %>
+    </div>
+  </div>
+</div>
