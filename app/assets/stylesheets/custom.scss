@@ -7,7 +7,10 @@
   display: inline-block;
   height: 250px;
   max-height: 250px;
+  background-color: #ffffff;
+  margin: 2px;
 }
+
 $gray-medium-light: #eaeaea;
 
 /* universal */
@@ -45,6 +48,14 @@ h1 {
   text-align: center;
 }
 h2 {
+  font-size: 1.8em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+h3 {
   font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
@@ -264,4 +275,12 @@ footer ul li {
   padding: 20px;
   background: #fff;
   min-height: 460px;
+}
+
+.review-zone {
+  background-color: #ffffff;
+}
+
+.book-image {
+  margin-top: 75px
 }

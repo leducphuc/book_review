@@ -10,6 +10,9 @@ class Ability
         cannot :manage, :all
       end   
       can :read, :all
+      can :manage, Review do |review|
+        review.user == user
+      end  
     end
   end
 end

@@ -70,3 +70,8 @@ en:
     three_star: "three star"
     four_star: "four star"
     five_star: "five star"
+  review:
+    label: "Review"
+    thanks: "Thank for your review"
+    update-success: "Update success"
+    update-fail: "Update fail"

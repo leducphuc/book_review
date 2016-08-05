@@ -3,7 +3,9 @@ Rails.application.routes.draw do
     registrations: "users/registrations"
   }
   root "static_pages#home"
-  resources :books, only: [:index, :show]
+  resources :books, only: [:index, :show] do
+    resources :reviews
+  end
   namespace :admin do
     resources :books
     resources :users, only: [:show, :index, :destroy]

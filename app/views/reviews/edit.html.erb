@@ -1,0 +1,12 @@
+<%= form_for [@book, @review], url: book_review_path, method: :put do |f| %>
+  <div class= "panel panel-default">
+    <div class="panel-heading">
+      <b><%= t "review.label" %></b>
+    </div>
+    <div class="panel-body">
+      <%= f.hidden_field :book_id, value: @review.book.id %>
+      <%= f.hidden_field :user_id, value: @review.user.id %>
+      <%= f.text_field :content, rows: 1, class: "form form-group form-control" %>
+    </div>
+  </div>
+<% end %>

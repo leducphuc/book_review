@@ -2,6 +2,7 @@ class BooksController < ApplicationController
   load_and_authorize_resource
 
   def show
+    @review ||= current_user.reviews.new
   end
 
   def index
