@@ -22,7 +22,9 @@ class Admin::BooksController < ApplicationController
   end
 
   def index
-    @books = @books.page params[:page]
+    load_categories
+    @q = @books.ransack params[:q]
+    @books = @q.result.page params[:page]
   end  
 
   def destroy
