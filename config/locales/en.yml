@@ -42,6 +42,11 @@ en:
     book_pages: "Pages"
     publish_date: "Publish date"
     books: "Books"
+    all: "All"
+    search: "Search"
+    sort_by: "Sort by"
+    from: "From"
+    to: "To"
   views:
     pagination:
       first: "&laquo; First"
@@ -58,3 +63,10 @@ en:
     update: "Update"
   quote:
     first: "A book is a dream that you hold in your hand."
+  rate: 
+    zero_star: "zero star"
+    one_star: "one star"
+    two_star: "two star"
+    three_star: "three star"
+    four_star: "four star"
+    five_star: "five star"

@@ -1,5 +1,8 @@
 <% provide :title, t("book.books") %>
 <h1><%= t "book.books" %></h1>  
+<div class="search-books">
+  <%= render "shared/form_search_books" %> 
+</div>  
 <div class="list_books">
   <div class="books">
     <%= render @books %>
