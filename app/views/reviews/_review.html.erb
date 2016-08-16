@@ -1,0 +1,35 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <div class="row">
+        <div class="col-md-3">
+          <small><%= review.user.name %></small>
+        </div>
+        <% if current_user == review.user %>
+          <div class="col-md-2 col-md-offset-5">
+          <%= link_to t("btn.edit"), edit_book_review_path(@book, review.id),
+            class: "btn btn-xs btn-primary" %>
+        <%= link_to t("btn.delete"), book_review_path(@book, review.id),
+            method: :delete, data: {confirm: t("application.confirm")},
+            class: "btn btn-xs btn-danger" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="panel-body">
+      <%= review.content %>
+    </div>
+    <div>
+      <span class="comments">
+        <% if review.comments.any? %>
+          <%= render review.comments %>
+        <% end %>
+      </span>
+      <span class="comment-form">
+         <%= form_for @comment, url: comments_path do |f|%>
+           <%= f.text_field :content %>
+           <%= f.hidden_field :review_id, value: review.id %>
+           <%= f.submit "Comment" %>
+         <% end %>
+      </span>
+    </div>
+</div>

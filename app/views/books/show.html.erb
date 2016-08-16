@@ -20,6 +20,13 @@
   </div>
   <div class="review-zone col-md-8">
     <h1><%= t "book.review" %></h1>
-    <%= render "reviews/show" %>
+
+    <div class="review-content">
+      <% if @book.reviews.any? %>
+        <%= render @book.reviews%>
+      <% end %>
+
+      <%= render "reviews/form" %>
+    </div>
   </div>
 </div>
