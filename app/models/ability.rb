@@ -13,6 +13,9 @@ class Ability
       can :manage, Review do |review|
         review.user == user
       end  
+      can :manage, Comment do |comment|
+        comment.user == user
+      end
     end
   end
 end
